@@ -1,3 +1,13 @@
+### Team KOL members
+
+* **Team Leader:** David Stephens - david@stephenscapitalinc.com
+* **Team Member 1:** Santhosh Tamilarasan - santorta@gmail.com
+* **Team Member 2:** Andres Guzman - andguzman08@gmail.com
+* **Team Member 3:** Yury Astashonok - yury.astashonok@gmail.com
+* **Team Member 4:** Pablo Sauras-Perez - psauras@g.clemson.edu
+
+### Instructions
+
 This is the project repo for the final project of the Udacity Self-Driving Car Nanodegree: Programming a Real Self-Driving Car. For more information about the project, see the project introduction [here](https://classroom.udacity.com/nanodegrees/nd013/parts/6047fe34-d93c-4f50-8336-b70ef10cb4b2/modules/e1a23b06-329a-4684-a717-ad476f0d8dff/lessons/462c933d-9f24-42d3-8bdc-a08a5fc866e4/concepts/5ab4b122-83e6-436d-850f-9f4d26627fd9).
 
 Please use **one** of the two installation options, either native **or** docker installation.
@@ -20,7 +30,6 @@ Please use **one** of the two installation options, either native **or** docker 
 * Download the [Udacity Simulator](https://github.com/udacity/CarND-Capstone/releases).
 
 ### Docker Installation
-
 [Install Docker](https://docs.docker.com/engine/installation/)
 
 Build the docker container
@@ -34,7 +43,6 @@ docker run -p 4567:4567 -v $PWD:/capstone -v /tmp/log:/root/.ros/ --rm -it capst
 ```
 
 ### Port Forwarding
-
 To set up port forwarding, please refer to the [instructions from term 2](https://classroom.udacity.com/nanodegrees/nd013/parts/40f38239-66b6-46ec-ae68-03afd8a601c8/modules/0949fca6-b379-42af-a919-ee50aa304e6a/lessons/f758c44c-5e40-4e01-93b5-1a82aa4e044f/concepts/16cf4a78-4fc7-49e1-8621-3450ca938b77)
 
 ### Usage
@@ -59,7 +67,6 @@ roslaunch launch/styx.launch
 4. Run the simulator
 
 ### Real world testing
-
 1. Download [training bag](https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic_light_bag_file.zip) that was recorded on the Udacity self-driving car.
 2. Unzip the file
 ```bash
