@@ -34,6 +34,10 @@
 namespace waypoint_follower
 {
 
+// Set to "true" to always follow waypoints
+// Set to "false" to follow waypoints only when deviating from track
+constexpr bool kAlwaysFollowWaypoints = true;
+
 void PurePursuit::callbackFromCurrentPose(const geometry_msgs::PoseStampedConstPtr &msg)
 {
   current_pose_.header = msg->header;
@@ -252,7 +256,7 @@ bool PurePursuit::verifyFollowing() const
 geometry_msgs::Twist PurePursuit::calcTwist(double curvature, double cmd_velocity) const
 {
   // verify whether vehicle is following the path
-  bool following_flag = verifyFollowing();
+  bool following_flag = !kAlwaysFollowWaypoints && verifyFollowing();
   static double prev_angular_velocity = 0;
 
   geometry_msgs::Twist twist;
